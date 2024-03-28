@@ -53,7 +53,7 @@ router.put("/delete", authentication, async (req,res) => {
     const id = req.body.id;
     const todos = user.todos;
     for (let i = 0; i < todos.length; i++) {
-        if (todos[i].id === id) {
+        if (todos[i]._id.equals(id)) {
             todos.splice(i,1);
             break;
         }

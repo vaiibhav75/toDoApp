@@ -7,9 +7,8 @@ const ToDoSchema = new mongoose.Schema({
     username: String,
     password: String,
     todos:[{
-        id: Number,
         title: String,
-        description: String,
+        description: String
     }]
 });
 
