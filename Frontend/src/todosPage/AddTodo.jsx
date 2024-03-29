@@ -10,7 +10,6 @@ function AddTodo (props) {
         props.setTodos(todosData);
     }
 
-
     return (
 
         <div className="todo-input">

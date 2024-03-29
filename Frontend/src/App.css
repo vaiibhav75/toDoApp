@@ -139,7 +139,7 @@ h1 {
   align-items: center;
   padding: 10px 25px;
   margin-bottom: 10px;
-  box-shadow: 0px 3px 5px rgb(43, 42, 42);
+  box-shadow: 0 3px 5px rgb(43, 42, 42);
 }
 
 .todo-list-item h3 {

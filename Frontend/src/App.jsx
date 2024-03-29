@@ -1,10 +1,7 @@
-import React, { useState, useEffect} from 'react'
-import reactLogo from './assets/react.svg'
+import React, {useState} from 'react'
 import './App.css'
 import LoginPage from "./loginPage/LoginPage.jsx";
 import TodosPage from "./todosPage/TodosPage.jsx";
-
-
 
 function App() {
     const [loggedIn, setLogin] = useState(false);
@@ -13,7 +10,5 @@ function App() {
         loggedIn ? <TodosPage token = {token}/> : <LoginPage setLogin = {setLogin} setToken = {setToken}/>
     )
 }
-
-
 
 export default App

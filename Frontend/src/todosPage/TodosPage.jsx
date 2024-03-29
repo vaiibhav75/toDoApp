@@ -6,13 +6,11 @@ import AddTodo from "./AddTodo.jsx";
 function TodosPage(props) {
     const [todos, setTodos] = useState([]);
 
-
     useEffect(() => {
         const fetchTodos = async () => {
             const todosData = await getTodos(props.token);
             setTodos(todosData);
         };
-
         fetchTodos();
     }, [props.token]);
 

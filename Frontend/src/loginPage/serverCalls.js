@@ -28,4 +28,4 @@ async function signUpHandler(data, props) {
     await signInHandler(data, props);
 }
 
-export {signInHandler, signUpHandler};
+export { signInHandler, signUpHandler };
