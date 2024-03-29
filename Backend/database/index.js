@@ -1,6 +1,7 @@
 // Mongoose Setup
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://vaiibhav75:PNNKbByUjLpdmGiq@clustervaiibhav.3e4ksft.mongodb.net/todo_app');
+const {MONGO_URI} = require('../config')
+mongoose.connect(MONGO_URI);
 
 // Schema definition
 const ToDoSchema = new mongoose.Schema({

@@ -7,12 +7,14 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 // Import router
-const router = require("./routes/user");
+const todoRouter = require("./routes/todos");
+const authRouter = require("./routes/authorisation");
 
 // Routes setup
 app.use(bodyParser.json());
 app.use(cors());
-app.use(router);
+app.use(authRouter);
+app.use(todoRouter);
 
 
 // Hosting server
