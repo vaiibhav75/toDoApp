@@ -1,5 +1,7 @@
+import {config} from "../../config.js";
+
 async function signInHandler(data, props){
-    const response = await fetch("http://localhost:3000/signin", {
+    const response = await fetch(`${config.apiUrl}/signin`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json" // Specify content type as JSON
@@ -15,7 +17,7 @@ async function signInHandler(data, props){
 }
 
 async function signUpHandler(data, props) {
-    const response = await fetch("http://localhost:3000/signup", {
+    const response = await fetch(`${config.apiUrl}/signup`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json" // Specify content type as JSON

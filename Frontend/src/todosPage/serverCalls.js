@@ -1,5 +1,7 @@
+import {config} from "../../config.js";
+
 async function getTodos(token) {
-    const response = await fetch("http://localhost:3000/todos", {
+    const response = await fetch(`${config.apiUrl}/todos`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -16,7 +18,7 @@ async function getTodos(token) {
 }
 
 async function addTodo (token, todo) {
-    const response = await fetch("http://localhost:3000/add",{
+    const response = await fetch(`${config.apiUrl}/add`,{
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -36,7 +38,7 @@ async function addTodo (token, todo) {
 }
 
 async function deleteTodo (token, id) {
-    const response = await fetch("http://localhost:3000/delete",{
+    const response = await fetch(`${config.apiUrl}/delete`,{
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
