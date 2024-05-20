@@ -11,6 +11,11 @@ async function signInHandler(data, props){
             "password": data.password
         })
     });
+
+    if (response.status !== 200) {
+        throw new Error('Failed to sign in');
+    }
+
     const responseData = await response.json();
     await props.setToken(responseData.userToken);
     await props.setLogin(true);
