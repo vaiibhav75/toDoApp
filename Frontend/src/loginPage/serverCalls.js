@@ -13,12 +13,12 @@ async function signInHandler(data, props){
     });
 
     if (response.status !== 200) {
-        throw new Error('Failed to sign in');
+        await props.setLogin(true);
     }
 
     const responseData = await response.json();
     await props.setToken(responseData.userToken);
-    await props.setLogin(true);
+
 }
 
 async function signUpHandler(data, props) {
