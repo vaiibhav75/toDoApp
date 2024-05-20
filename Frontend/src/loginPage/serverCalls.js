@@ -12,12 +12,14 @@ async function signInHandler(data, props){
         })
     });
 
-    if (response.status !== 200) {
-        await props.setLogin(true);
-    }
+
 
     const responseData = await response.json();
     await props.setToken(responseData.userToken);
+
+    if (response.status === 200) {
+        await props.setLogin(true);
+    }
 
 }
 
