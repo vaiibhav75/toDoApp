@@ -37,7 +37,7 @@ Deployed link: https://to-do-app-fronted.vercel.app/
 `npm install`
 
 4. Set up environment variables:
-    - Create a `.env` file in the root directory.
+    - Create a `.env` file in the backend directory.
     - Add the following variables:
         - `MONGODB_URI`: URI for connecting to your MongoDB database.
         - `JWT_SECRET`: Secret key for JWT token generation.
