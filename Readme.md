@@ -28,7 +28,7 @@ Deployed link: [ToDo App](https://to-do-app-fronted.vercel.app/)
 
 2. Navigate to the project directory:
 
-   `cd myPayments`
+   `cd toDoApp`
 
 ## Backend setup
     Note - You can skip this step and use the already deployed version
@@ -43,7 +43,7 @@ Deployed link: [ToDo App](https://to-do-app-fronted.vercel.app/)
 
 3. Set up environment variables:
    - Create a `.env` file in the `backend` directory.
-   - Add the following variables:
+   - Add the following variable:
       - `MONGODB_URI`: URI for connecting to your MongoDB database.
 
 4. Start the server:
