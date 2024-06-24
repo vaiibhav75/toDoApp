@@ -23,7 +23,7 @@ Deployed link: https://to-do-app-fronted.vercel.app/
 
 1. Clone the repository:
 
-`git clone https://github.com/yourusername/mern-todo-app.git`
+`git clone https://github.com/vaiibhav75/toDoApp`
 
 
 2. Navigate to the project directory:
