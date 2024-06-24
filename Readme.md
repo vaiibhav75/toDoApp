@@ -28,7 +28,9 @@ Deployed link: https://to-do-app-fronted.vercel.app/
 
 2. Navigate to the project directory:
 
-`cd mern-todo-app`
+`cd toDoApp`
+
+`cd frontend`
 
 3. Install dependencies:
 
@@ -40,9 +42,9 @@ Deployed link: https://to-do-app-fronted.vercel.app/
         - `MONGODB_URI`: URI for connecting to your MongoDB database.
         - `JWT_SECRET`: Secret key for JWT token generation.
 
-5. Start the application:
+5. Start the frontend:
 
-`npm start`
+`npm run dev`
 
 ## Contributing
 
