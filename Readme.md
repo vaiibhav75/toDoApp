@@ -2,6 +2,8 @@
 
 This is a simple ToDo application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to sign up, sign in, view their todos, add new todos, and delete existing todos.
 
+Deployed link: https://to-do-app-fronted.vercel.app/
+
 ## Features
 
 - **Sign Up:** Users can create a new account by providing their email and password.
